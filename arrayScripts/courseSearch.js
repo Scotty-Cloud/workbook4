@@ -46,7 +46,11 @@ for (let i = 0; i < courses.length; i++) {
 }
 
 // What is the title of the PROJ500 course?
-
+for (let i = 0; i < courses.length; i++) {
+  if (courses[i].CourseId === "PROJ500") {
+    console.log(`The title of PROJ500 is ${courses[i].Title}.`);
+  }
+}
 // What are the titles of the courses that cost $50 or less?
 
 // What classes meet in "Classroom 1"?
