@@ -30,7 +30,12 @@ for (let i = 0; i < academyMembers.length; i++) {
 }
 console.log();
 //* Who has have been in at least 3 films?
-
+for (let i = 0; i < academyMembers.length; i++) {
+  if (academyMembers[i].films.length >= 3) {
+    console.log(`Academy member ${academyMembers[i].name} has been in at least 3 films.`);
+  }
+}
+console.log();
 //* Who has a name that starts with "Bob"?
 
 //* HARDER: Which Academy Members have been in a film
