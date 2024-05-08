@@ -37,7 +37,10 @@ for (let i = 0; i < academyMembers.length; i++) {
 }
 console.log();
 //* Who has a name that starts with "Bob"?
-
-//* HARDER: Which Academy Members have been in a film
-
-//* that starts with "A"
+for (let i = 0; i < academyMembers.length; i++) {
+    if (academyMembers[i].name.startsWith("Bob")) {
+      console.log(`The Academy member with the name starting with "Bob" is: ${academyMembers[i].name}.`);
+    }
+  }
+  console.log();
+//* HARDER: Which Academy Members have been in a film that starts with "A"
