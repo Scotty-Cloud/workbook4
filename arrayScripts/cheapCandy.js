@@ -11,37 +11,37 @@ let products = [
   { Product: "Snickers", Price: 2.49 },
   { Product: "KitKat", Price: 2.99 },
   { Product: "DumDum Pops", Price: 1.49 },
-  // price ranges
 ];
 
-// Which candies costs less than $4.00?
+//* Which candies costs less than $4.00?
 function cheapestCandy(candies) {
   let result = [];
-  for (let i = 0; i < candies.length; i++) {
+  for(let i = 0; i < candies.length; i++) {
     let price = candies[i].price || candies[i].Price;
-    if (price < 4.0) {
+    if(price < 4.0) {
       result.push(candies[i]);
     }
   }
   return result;
 }
 console.log(cheapestCandy(products));
-// Which candies has "M&M" in its name?
-for (let i = 0; i < products.length; i++) {
+
+//* Which candies has "M&M" in its name?
+for(let i = 0; i < products.length; i++) {
   let productName = products[i].product || products[i].Product;
-  if (productName.includes("M&M")) {
+  if(productName.includes("M&M")) {
     console.log(`Found M&M candy: ${productName}`);
   }
 }
-// Do we carry "Swedish Fish"?
+
+//* Do we carry "Swedish Fish"?
 function fishCarry(products, productName) {
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].product.toLowerCase() === productName.toLowerCase()) {
+  for(let i = 0; i < products.length; i++) {
+    if(products[i].product.toLowerCase() === productName.toLowerCase()) {
       console.log(`Yes, we carry ${productName}.`);
       return;
     }
   }
   console.log(`No, we do not carry ${productName}.`);
 }
-
 fishCarry(products, "Swedish Fish");
