@@ -12,10 +12,11 @@ let menu = [
 let drinks = [];
 //loop through the existing array
 for (let index = 0; index < menu.length; index++) {
+  //put one element/item in the array into a menuItem variable
   const menuItem = menu[index];
   console.log(menuItem);
   //find matching items
-  if (menuItem.category == "drink") {
+  if (menuItem.category == "Drink") {
     //add matching items to the new array
     drinks.push(menuItem);
   }
