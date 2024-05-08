@@ -78,6 +78,11 @@ for(let i = 0; i < vehicles.length; i++){
     console.log(`Vehicle ${vehicles[i].licenseNo} has an expired registration`);
   }
 }
+console.log()
 //* Which vehicles that hold at least 6 people?
-
+for (let i = 0; i < vehicles.length; i++) {
+    if (vehicles[i].capacity >= 6) {
+      console.log(`Vehicle ${vehicles[i].licenseNo} can hold at least 6 people`);
+    }
+  }
 //* Which vehicles have license plates that end with "222"?
