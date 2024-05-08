@@ -25,7 +25,7 @@ function cheapestCandy(candies) {
   return result;
 }
 console.log(cheapestCandy(products));
-
+console.log();
 //* Which candies has "M&M" in its name?
 for(let i = 0; i < products.length; i++) {
   let productName = products[i].product || products[i].Product;
@@ -33,7 +33,7 @@ for(let i = 0; i < products.length; i++) {
     console.log(`Found M&M candy: ${productName}`);
   }
 }
-
+console.log();
 //* Do we carry "Swedish Fish"?
 function fishCarry(products, productName) {
   for(let i = 0; i < products.length; i++) {
