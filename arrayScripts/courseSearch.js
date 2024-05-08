@@ -44,26 +44,31 @@ for(let i = 0; i < courses.length; i++) {
     console.log(`The PROG200 course starts on ${courses[i].StartDate}.`);
   }
 }
-
+console.log();
 //* What is the title of the PROJ500 course?
 for(let i = 0; i < courses.length; i++) {
   if(courses[i].CourseId === "PROJ500") {
     console.log(`The title of PROJ500 is ${courses[i].Title}.`);
   }
 }
-
+console.log();
 //* What are the titles of the courses that cost $50 or less?
-let cheapCourses = [];
+// let cheapCourses = [];
+// for(let i = 0; i < courses.length; i++) {
+//   if(parseFloat(courses[i].Fee) <= 50) {
+//     cheapCourses.push(courses[i].Title);
+//   }
+// }
+// console.log("Courses costing $50 or less:", cheapCourses);
 for(let i = 0; i < courses.length; i++) {
-  if(parseFloat(courses[i].Fee) <= 50) {
-    cheapCourses.push(courses[i].Title);
-  }
+    if(courses[i].Fee === "50.00"){
+        console.log(`The courses that are $50 or less are: ${courses[i].CourseId}`);
+    }
 }
-console.log("Courses costing $50 or less:", cheapCourses);
-
+console.log();
 //* What classes meet in "Classroom 1"?
 for(let i = 0; i < courses.length; i++) {
     if(courses[i].Location === "Classroom 1"){
-        console.log(`The classes that meet in Classroom 1 are: ${courses[i].CourseId}.`);
+       console.log(`The classes that meet in Classroom 1 are: ${courses[i].CourseId}.`);
     }
 }
