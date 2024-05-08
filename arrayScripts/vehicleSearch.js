@@ -66,8 +66,8 @@ let vehicles = [
 ];
 
 //* Which vehicles are RED?
-for (let i = 0; i < vehicles.length; i++) {
-  if (vehicles[i].color === "Red") {
+for(let i = 0; i < vehicles.length; i++){
+  if(vehicles[i].color === "Red") {
     console.log(`Vehicle ${vehicles[i].licenseNo} is Red`);
   }
 }
@@ -78,11 +78,19 @@ for(let i = 0; i < vehicles.length; i++){
     console.log(`Vehicle ${vehicles[i].licenseNo} has an expired registration`);
   }
 }
-console.log()
+console.log();
 //* Which vehicles that hold at least 6 people?
-for (let i = 0; i < vehicles.length; i++) {
-    if (vehicles[i].capacity >= 6) {
-      console.log(`Vehicle ${vehicles[i].licenseNo} can hold at least 6 people`);
-    }
+for(let i = 0; i < vehicles.length; i++){
+  if(vehicles[i].capacity >= 6){
+    console.log(`Vehicle ${vehicles[i].licenseNo} can hold at least 6 people`);
   }
+}
+console.log();
 //* Which vehicles have license plates that end with "222"?
+for(let i = 0; i < vehicles.length; i++){
+  if(vehicles[i].licenseNo.endsWith("222")){
+    console.log(
+      `Vehicle ${vehicles[i].licenseNo} has a license plate that ends with "222"`
+    );
+  }
+}
