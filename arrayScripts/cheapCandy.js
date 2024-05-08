@@ -34,3 +34,14 @@ for (let i = 0; i < products.length; i++) {
   }
 }
 // Do we carry "Swedish Fish"?
+function fishCarry(products, productName) {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].product.toLowerCase() === productName.toLowerCase()) {
+      console.log(`Yes, we carry ${productName}.`);
+      return;
+    }
+  }
+  console.log(`No, we do not carry ${productName}.`);
+}
+
+fishCarry(products, "Swedish Fish");
