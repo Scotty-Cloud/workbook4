@@ -39,12 +39,11 @@ let courses = [
 ];
 
 // When does the PROG200 course start?
-for (let course of courses) {
-    if (course.CourseId === "PROG200") {
-      console.log(`The PROG200 course starts on ${course.StartDate}.`);
-      break;
-    }
+for (let i = 0; i < courses.length; i++) {
+  if (courses[i].CourseId === "PROG200") {
+    console.log(`The PROG200 course starts on ${courses[i].StartDate}.`);
   }
+}
 
 // What is the title of the PROJ500 course?
 // What are the titles of the courses that cost $50 or less?
