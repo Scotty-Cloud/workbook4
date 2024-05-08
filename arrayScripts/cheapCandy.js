@@ -27,4 +27,10 @@ function cheapestCandy(candies) {
 }
 console.log(cheapestCandy(products));
 // Which candies has "M&M" in its name?
+for (let i = 0; i < products.length; i++) {
+  let productName = products[i].product || products[i].Product;
+  if (productName.includes("M&M")) {
+    console.log(`Found M&M candy: ${productName}`);
+  }
+}
 // Do we carry "Swedish Fish"?
