@@ -71,9 +71,13 @@ for (let i = 0; i < vehicles.length; i++) {
     console.log(`Vehicle ${vehicles[i].licenseNo} is Red`);
   }
 }
-
+console.log();
 //* Which vehicles have registrations that are expired?
-
+for(let i = 0; i < vehicles.length; i++){
+  if(vehicles[i].registrationExpires < new Date()){
+    console.log(`Vehicle ${vehicles[i].licenseNo} has an expired registration`);
+  }
+}
 //* Which vehicles that hold at least 6 people?
 
 //* Which vehicles have license plates that end with "222"?
