@@ -46,7 +46,11 @@ for (const course of courses) {
 }
 // console.log();
 // //* What is the title of the PROJ500 course?
-
+for(let course of courses){
+    if(course.CourseId === "PROJ500"){
+        console.log(`The PROJ500 course title is: ${course.Title}`);
+    }
+}
 // //* What are the titles of the courses that cost $50 or less?
 // // let cheapCourses = [];
 // // for(let i = 0; i < courses.length; i++) {
