@@ -53,10 +53,15 @@ for(let course of courses){
 }
 // //* What are the titles of the courses that cost $50 or less?
 // What are the titles of the courses that cost $50 or less?
-for(const course of courses){
+for(let course of courses){
   if(course.Fee === "50.00"){
     console.log(`The courses that are $50 or less are: ${course.Title}`);
   }
 }
 
 // What classes meet in "Classroom 1"?
+for(let course of courses){
+  if(course.Location === "Classroom 1"){
+    console.log(`The classes that meet in Classroom 1 are: ${course.Title}`);
+  }
+}
