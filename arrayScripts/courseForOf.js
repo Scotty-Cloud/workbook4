@@ -39,11 +39,6 @@ let courses = [
 ];
 
 //* When does the PROG200 course start?
-// for(let i = 0; i < courses.length; i++) {
-//   if(courses[i].CourseId === "PROG200") {
-//     console.log(`The PROG200 course starts on ${courses[i].StartDate}.`);
-//   }
-// }
 for (const course of courses) {
   if (course.CourseId === "PROG200") {
     console.log(`The PROG200 course starts on: ${course.StartDate}`);
@@ -51,12 +46,7 @@ for (const course of courses) {
 }
 // console.log();
 // //* What is the title of the PROJ500 course?
-// for(let i = 0; i < courses.length; i++) {
-//   if(courses[i].CourseId === "PROJ500") {
-//     console.log(`The title of PROJ500 is ${courses[i].Title}.`);
-//   }
-// }
-// console.log();
+
 // //* What are the titles of the courses that cost $50 or less?
 // // let cheapCourses = [];
 // // for(let i = 0; i < courses.length; i++) {
