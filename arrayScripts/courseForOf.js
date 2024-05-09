@@ -39,28 +39,28 @@ let courses = [
 ];
 
 //* When does the PROG200 course start?
-for(let course of courses){
+for(const course of courses){
   if(course.CourseId === "PROG200"){
     console.log(`The PROG200 course starts on: ${course.StartDate}`);
   }
 }
 // console.log();
 // //* What is the title of the PROJ500 course?
-for(let course of courses){
+for(const course of courses){
   if(course.CourseId === "PROJ500"){
     console.log(`The PROJ500 course title is: ${course.Title}`);
   }
 }
 // //* What are the titles of the courses that cost $50 or less?
 // What are the titles of the courses that cost $50 or less?
-for(let course of courses){
+for(const course of courses){
   if(course.Fee === "50.00"){
     console.log(`The courses that are $50 or less are: ${course.Title}`);
   }
 }
 
 // What classes meet in "Classroom 1"?
-for(let course of courses){
+for(const course of courses){
   if(course.Location === "Classroom 1"){
     console.log(`The classes that meet in Classroom 1 are: ${course.Title}`);
   }
