@@ -62,6 +62,6 @@ for(const course of courses){
 // What classes meet in "Classroom 1"?
 for(const course of courses){
   if(course.Location === "Classroom 1"){
-    console.log(`The classes that meet in Classroom 1 are: ${course.Title}`);
+    console.log(`The classes that meet in Classroom 1 are: ${course.CourseId}`);
   }
 }
