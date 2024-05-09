@@ -52,7 +52,14 @@ const states = [
 ];
 
 function init() {
-  console.log("test");
+  const statesList = document.getElementById("statesList");
+
+  for (const state of states) {
+    const option = document.createElement("option");
+    option.value = state.abbrev;
+    option.innerText = state.name;
+    statesList.appendChild(option);
+  }
 }
 
 window.onload = init;
