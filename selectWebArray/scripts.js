@@ -53,9 +53,12 @@ const states = [
   { name: "Wyoming", abbrev: "WY" },
 ];
 
+const statesList = document.getElementById("statesList");
+
 function init() {
-  //get the select list element in a variable
-  const statesList = document.getElementById("statesList");
+  const displayStateButton = document.getElementById("displayStateButton");
+  // displayStateButton.onclick = displayState;
+  statesList.onchange = displayState;
 
   //loop through states array one at a time
   for (const state of states) {
@@ -68,6 +71,17 @@ function init() {
 
     //add the option element to the page as a child of the select list
     statesList.appendChild(option);
+  }
+}
+
+function displayState() {
+  console.log(statesList.value);
+  const messageParagraph = document.getElementById("messageParagraph");
+  let selectedStateAbbrev = statesList.value;
+  for (const state of states) {
+    if (state.abbrev == selectedStateAbbrev) {
+      messageParagraph.innerText = state.name;
+    }
   }
 }
 
