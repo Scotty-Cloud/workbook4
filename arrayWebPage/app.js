@@ -1,3 +1,5 @@
+"use strict";
+
 const states = [
   { name: "Alabama", abbrev: "AL" },
   { name: "Alaska", abbrev: "AK" },
@@ -52,14 +54,19 @@ const states = [
 ];
 
 function init() {
+  //get the select list element in a variable
   const statesList = document.getElementById("statesList");
-
+  //loop through states array one at a time
   for (const state of states) {
+    //create option element
     const option = document.createElement("option");
+    //set the value of the element (value is not visible on web page)
     option.value = state.abbrev;
+    //set the text between the opening and closing option tags
     option.innerText = state.name;
+    //add the option element to the page as a child of the select list
     statesList.appendChild(option);
   }
 }
-
+//wait for html to load and then call init function
 window.onload = init;
